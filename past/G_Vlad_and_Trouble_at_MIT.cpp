@@ -36,32 +36,41 @@ void solve()
         cin >> edg[i];
     string s;
     cin >> s;
-    int ans = 0;
-    int si = 0, ei = 0;
-    for (int i = 0; i < n - 1; i++)
+    int cs = 0, cp = 0;
+    for (char c : s)
     {
-        // int v = i - 1;
-        int u = i + 1;
-        // cout << "\nfrom: " << u << "    to: " << edg[ei] - 1 << endl;
-
-        int v = edg[ei++] - 1;
-        adj[u][v] = 1;
-        // adj[v][u] = 1;
+        if (c == 'S')
+            cs++;
+        if (c == 'P')
+            cp++;
     }
+    cout << min(cs, cp) << endl;
+    // int ans = 0;
+    // int si = 0, ei = 0;
+    // for (int i = 0; i < n - 1; i++)
+    // {
+    //     // int v = i - 1;
+    //     int u = i + 1;
+    //     // cout << "\nfrom: " << u << "    to: " << edg[ei] - 1 << endl;
 
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j < n; j++)
-        {
-            if (adj[i][j])
-            {
+    //     int v = edg[ei++] - 1;
+    //     adj[u][v] = 1;
+    //     // adj[v][u] = 1;
+    // }
 
-                if ((s[i] == 'P' && s[j] == 'S') || (s[i] == 'S' && s[j] == 'P'))
-                    ans++;
-            }
-        }
-        // cout << endl;
-    }
+    // for (int i = 0; i < n; i++)
+    // {
+    //     for (int j = 0; j < n; j++)
+    //     {
+    //         if (adj[i][j])
+    //         {
+
+    //             if ((s[i] == 'P' && s[j] == 'S') || (s[i] == 'S' && s[j] == 'P'))
+    //                 ans++;
+    //         }
+    //     }
+    //     // cout << endl;
+    // }
 
     // for (int i = 0; i < (int)s.length() - 1; i++)
     // {
@@ -71,8 +80,8 @@ void solve()
     //     if ((v1 == 'C' && v2 == 'S') || (v1 == 'S' && v2 == 'C'))
     //         ans++;
     // }
-    cout << ans ;
-    cout << endl;
+    // cout << ans;
+    // cout << endl;
 }
 
 signed main()
