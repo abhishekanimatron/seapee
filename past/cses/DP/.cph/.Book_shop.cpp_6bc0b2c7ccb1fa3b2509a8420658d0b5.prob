@@ -1,0 +1,1 @@
+{"name":"Local: Book_shop","url":"d:\\E\\koda\\cses\\DP\\Book_shop.cpp","tests":[{"id":1718729260457,"input":"4 10\n4 8 5 3\n5 12 8 1","output":"13\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\E\\koda\\cses\\DP\\Book_shop.cpp","group":"local","local":true}

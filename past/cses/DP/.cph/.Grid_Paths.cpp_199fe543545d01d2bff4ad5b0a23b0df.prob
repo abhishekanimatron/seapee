@@ -1,0 +1,1 @@
+{"name":"Local: Grid_Paths","url":"d:\\E\\koda\\cses\\DP\\Grid_Paths.cpp","tests":[{"id":1718722625443,"input":"4\n....\n.*..\n...*\n*...","output":"3\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\E\\koda\\cses\\DP\\Grid_Paths.cpp","group":"local","local":true}
